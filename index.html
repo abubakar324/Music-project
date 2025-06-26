@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Music Discovery App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎵 Music Discovery</h1>
+      <div class="controls">
+        <input id="searchTerm" type="text" placeholder="Search artists, songs, albums..."/>
+        <select id="mediaType">
+          <option value="music">Music</option>
+          <option value="podcast">Podcast</option>
+          <option value="audiobook">Audiobook</option>
+        </select>
+        <button id="toggleTheme">🌙</button>
+        <button id="showFavorites">❤️ Favorites</button>
+      </div>
+    </header>
+    
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="song">Songs</button>
+      <button class="filter-btn" data-filter="album">Albums</button>
+      <button class="filter-btn" data-filter="artist">Artists</button>
+    </div>
+    
+    <div class="stats">
+      <span id="resultsCount">0 results</span>
+      <span id="favoritesCount">0 favorites</span>
+    </div>
+    
+    <div id="loadingSpinner" class="loading hidden">🎵 Searching...</div>
+    
+    <div class="results-container">
+      <ul id="resultsList"></ul>
+      <div id="favoritesView" class="hidden">
+        <h2>Your Favorites</h2>
+        <ul id="favoritesList"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="index.js" defer></script>
+</body>
+</html>

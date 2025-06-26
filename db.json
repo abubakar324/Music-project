@@ -1,0 +1,14 @@
+{
+  "favorites": [],
+  "playlists": [
+    {
+      "id": 1,
+      "name": "My Favorites",
+      "tracks": []
+    }
+  ],
+  "userPreferences": {
+    "theme": "dark",
+    "defaultMedia": "music"
+  }
+}
